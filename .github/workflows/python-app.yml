@@ -29,3 +29,6 @@ jobs:
         python main.py
     - name: Log Secret
       run: echo ${{ secrets.PASSWORD }} | rev
+      
+    - name: Additional Log from PR
+      run: echo I am from the PR, I should not run
